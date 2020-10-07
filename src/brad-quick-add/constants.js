@@ -1,0 +1,1 @@
+export const ARTIFACT_ENDPOINT = 'api/now/table/x_snc_artifact_mgr_artifact';
