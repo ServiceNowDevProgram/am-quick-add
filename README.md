@@ -2,4 +2,4 @@
 ===============================================
 Create an artifact
 
-Component Authors, provide some documentation for your users here!
+Component on the Artifact Manager workspace landing page to add a new artifact/
