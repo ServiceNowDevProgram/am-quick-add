@@ -7,7 +7,8 @@ createCustomElement('brad-quick-add', {
 	view,
     styles,
     initialState: {
-        artifactTitle: '',
+		artifactTitle: '',
+		artifactType: 'blog_post',
 		msg: 'Lets build the component!'
 	},
 	...actionHandlers

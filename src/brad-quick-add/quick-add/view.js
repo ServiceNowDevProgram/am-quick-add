@@ -3,7 +3,7 @@ import '@servicenow/now-button';
 
 export default (state, {dispatch, updateState}) => {
 
-    const {msg, artifactTitle} = state;
+    const {msg, artifactTitle, artifactType} = state;
 
     return (
         <div>
@@ -14,6 +14,15 @@ export default (state, {dispatch, updateState}) => {
                     label="Artifact title" 
                     helperContent="Title of your artifact">
                 </now-input>
+            </p>
+            <p>
+                <now-dropdown 
+                    items={[{"id":"blog_post","label":"Blog post"},{"id":"video","label":"Video"},{"id":"podcast","label":"Podcast"},{"id":"live_stream","label":"Live Stream"}]} 
+                    selectedItems={[artifactType]}
+                    select="single" 
+                    variant="secondary" 
+                    size="md" >
+                </now-dropdown>
             </p>
 			<p>
                 <now-button 
